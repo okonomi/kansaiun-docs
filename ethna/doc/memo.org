@@ -1,0 +1,54 @@
+* Ethna って今どうなってますか？
+** 自己紹介
+    - 川上 信也
+      - id:okonomi
+      - @okonomi
+    - ガラケー
+** リリースの歴史
+    - 2006/01/29 Ethna 0.2.0リリース
+    - 2006/04/20 Ethna 2.1.0-preview1リリース
+    - 2006/06/06 Ethna 2.1.0リリース
+    - 2006/06/07 Ethna 2.1.1リリース
+    - 2006/06/07 Ethna 2.1.2リリース
+    - 2006/07/10 Ethna 2.3.0 Preview1リリース
+    - 2006/07/20 Ethna 2.3.0 Preview2リリース
+    - 2006/11/21 Ethna 2.3.0 Preview3リリース
+    - 2006/11/29 Ethna 2.3.0 リリース
+    - 2007/01/05 Ethna 2.3.1 リリース
+    - 2007/07/16 Ethna 2.3.2 リリース
+    - 2008/05/08 Ethna 2.3.5 リリース
+    - 2008/07/05 Ethna 2.5.0 preview1 リリース
+    - 2008/10/11 Ethna 2.5.0 preview2 リリース
+    - 2009/01/29 Ethna 2.5.0 preview3 リリース
+    - 2009/02/06 Ethna 2.3.6 リリース
+    - 2009/06/16 Ethna 2.5.0 preview4, 2.3.7 リリース
+    - 2009/10/18 Ethna 2.5.0 リリース
+    - そして3.0へ...
+** 数々の新機能!!!
+*** UTF-8 (2.5.0)
+     - ソースコードが全面的にUTF-8
+*** エンコーディング指定
+*** ActionForm
+     - フォーム定義の多次元対応 (2.5.0)
+     - 動的定義 (2.5.0)
+*** 国際化 (2.5.0)
+      - {'Hoge'|i18n}
+      - ethna i18n
+*** テンプレート (3.0?)
+      - レイアウト
+      - 汎用テンプレート
+        header('404');
+        return 'error404';
+*** プラグイン (2.5.0)
+      - Smartyプラグイン
+      - openpear
+        - ethna pear-local openpear/ethna_plugin_hoge
+*** テスト (2.3.5)
+      - unittest.php
+*** 周辺ライブラリ
+      - Ethna_Plugin_Debugtoolbar (id:sotarok)
+      - projBop_ActionForm, projBop_ViewClass (BoBpp)
+         $this->af->freeze();
+      - Net_Url_MapperできれいなURL
+          /?action_hoge_index=true
+          /hoge/index

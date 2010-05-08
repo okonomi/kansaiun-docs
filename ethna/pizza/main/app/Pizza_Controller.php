@@ -13,7 +13,9 @@ define('BASE', dirname(dirname(__FILE__)));
 /** include_path setting (adding "/app" and "/lib" directory to include_path) */
 $app = BASE . "/app";
 $lib = BASE . "/lib";
-set_include_path(implode(PATH_SEPARATOR, array($app, $lib)) . PATH_SEPARATOR . get_include_path());
+$manager = $app . "/manager";
+$object = $app . "/object";
+set_include_path(implode(PATH_SEPARATOR, array($app, $lib, $manager, $object)) . PATH_SEPARATOR . get_include_path());
 
 
 /** including application library. */
@@ -94,6 +96,8 @@ class Pizza_Controller extends Ethna_Controller
         'action_cli'    => 'app/action_cli',
         'action_xmlrpc' => 'app/action_xmlrpc',
         'app'           => 'app',
+        'manager'       => 'app/manager',
+        'object'        => 'app/object',
         'plugin'        => 'app/plugin',
         'bin'           => 'bin',
         'etc'           => 'etc',

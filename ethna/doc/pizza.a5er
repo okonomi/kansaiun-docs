@@ -1,0 +1,27 @@
+# A5:ER FORMAT:04
+# A5:ER ENCODING:Shift_JIS
+# A5:ER Mk-1 Copyright (C)2007 m.matsubara
+# A5:SQL Mk-2 Copyright (C)1997 m.matsubara
+#  http://www.wind.sannet.ne.jp/m_matsu/developer/a5m2/
+
+[Manager]
+ProjectName=ƒsƒU‚â‚³‚ñ
+Author=
+MaxEntityRowShow=1000
+ReadOnlyRecommend=0
+Page=Main
+LogicalView=1
+DecodeDomain=0
+ViewMode=2
+ViewFormat=0
+UseNondependenceDashLine=0
+FontName=Tahoma
+FontSize=6
+PaperSize=A4Landscape
+HeaderLeft=
+HeaderCenter=
+HeaderRight=
+FooterLeft=
+FooterCenter=
+FooterRight=
+ShowPageoutRelation=1

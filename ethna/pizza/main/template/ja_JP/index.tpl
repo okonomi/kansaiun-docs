@@ -12,7 +12,7 @@
 
 <div id="main">
     <h2>Index Page</h2>
-    <p>hello, world!</p>
+    <p><a href="{url action="order"}">注文する</a></p>
 </div>
 
 <div id="footer">

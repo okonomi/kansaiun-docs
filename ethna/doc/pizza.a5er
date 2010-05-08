@@ -28,6 +28,7 @@ FooterRight=
 ShowPageoutRelation=1
 RDBMSType=6
 RDBMSTypeName=PostgreSQL
+EnableTableOption=0
 CreateFk=1
 CreateFK_ParentCard1Only=1
 GenerateCommentStatement=0
@@ -35,7 +36,7 @@ GenerateCommentStatement_LName=0
 
 [Relation]
 Entity1=pizza
-Entity2=order_content
+Entity2=pizza_order_content
 RelationType1=2
 RelationType2=1
 Fields1=id
@@ -55,12 +56,12 @@ TermPos1=R
 TermPos2=R
 
 [Relation]
-Entity1=order
-Entity2=order_content
+Entity1=pizza_order
+Entity2=pizza_order_content
 RelationType1=2
 RelationType2=4
 Fields1=id
-Fields2=order_id
+Fields2=pizza_order_id
 Cardinarity1=
 Cardinarity2=
 Position="MAIN",0,5000,3632,5000,R,R
@@ -76,7 +77,7 @@ TermPos1=R
 TermPos2=R
 
 [Entity]
-PName=order_content
+PName=pizza_order_content
 LName=íçï∂ì‡óe
 Comment=
 TableOption=
@@ -84,17 +85,17 @@ Page=Main
 Left=1050
 Top=850
 Field="ID","id","*SERIAL","NOT NULL",0,"","",$FFFFFFFF
-Field="íçï∂ID","order_id","@INT","NOT NULL",,"","",$FFFFFFFF
+Field="íçï∂ID","pizza_order_id","@INT","NOT NULL",,"","",$FFFFFFFF
 Field="ÉsÉUID","pizza_id","@INT","NOT NULL",,"","",$FFFFFFFF
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-ModifiedDateTime=20100508235758
+ModifiedDateTime=20100509001612
 Position="Main",1050,850
 
 [Relation]
 Entity1=shop
-Entity2=order
+Entity2=pizza_order
 RelationType1=2
 RelationType2=3
 Fields1=id
@@ -114,12 +115,12 @@ TermPos1=R
 TermPos2=R
 
 [Relation]
-Entity1=user
-Entity2=order
+Entity1=consumer
+Entity2=pizza_order
 RelationType1=2
 RelationType2=3
 Fields1=id
-Fields2=user_id
+Fields2=consumer_id
 Cardinarity1=
 Cardinarity2=
 Position="MAIN",0,5000,5000,4606,R,R
@@ -150,7 +151,7 @@ ModifiedDateTime=20100508235602
 Position="Main",1500,750
 
 [Entity]
-PName=order
+PName=pizza_order
 LName=íçï∂
 Comment=
 TableOption=
@@ -158,12 +159,12 @@ Page=Main
 Left=900
 Top=450
 Field="ID","id","*SERIAL","NOT NULL",0,"","",$FFFFFFFF
-Field="ãqID","user_id","@INT","NOT NULL",,"","",$FFFFFFFF
+Field="ãqID","consumer_id","@INT","NOT NULL",,"","",$FFFFFFFF
 Field="ìXï‹ID","shop_id","@INT","NOT NULL",,"","",$FFFFFFFF
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-ModifiedDateTime=20100508235714
+ModifiedDateTime=20100509002318
 Position="Main",900,450
 
 [Entity]
@@ -182,7 +183,7 @@ ModifiedDateTime=20100508235721
 Position="Main",1400,350
 
 [Entity]
-PName=user
+PName=consumer
 LName=ãq
 Comment=
 TableOption=
@@ -193,5 +194,5 @@ Field="ID","id","*SERIAL","NOT NULL",0,"","",$FFFFFFFF
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-ModifiedDateTime=20100508235432
+ModifiedDateTime=20100509002254
 Position="Main",600,350
